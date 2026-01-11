@@ -106,9 +106,9 @@ def main():
             import yaml
             with open('config.local.yaml', 'r', encoding='utf-8') as fh:
                 cfg = yaml.safe_load(fh)
-            db_config = cfg.get('db') or 'bets.db'
+            db_config = cfg.get('db') or None
         except Exception:
-            db_config = 'bets.db'
+            db_config = None
 
     pending = db.get_pending_bets(db_config=db_config)
     print(f"Encontradas {len(pending)} apostas pendentes em {db_config}")

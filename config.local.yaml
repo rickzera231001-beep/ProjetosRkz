@@ -32,11 +32,11 @@ match_filter:
 
 # Parâmetros de detecção de valor e geração de parlays
 value_detection:
-  value_margin: 0.05      # prob_est - implied_prob >= value_margin
+  value_margin: 0.01      # prob_est - implied_prob >= value_margin
   parlay_target: 2.0      # odd alvo para parlays
   max_parlay_legs: 3
   min_odd_for_leg: 1.10
-  max_odd_for_leg: 2.00
+  max_odd_for_leg: 3.00
   allow_cross_game: true
 
 # OpenAI / IA

@@ -87,14 +87,7 @@ def main():
                     lg_url, max_teams=max_teams)
                 print(
                     f"Encontrados {len(team_urls)} times (limit {max_teams}).")
-                for tu in team_urls:
-                    try:
-                        stats = scrape_stats(tu, {})
-                        stats["source_name"] = f"{lg_name} - team"
-                        stats["source_url"] = tu
-                        collected.append(stats)
-                    except Exception as e:
-                        print(f"Erro scraping time {tu}: {e}")
+                # skipping per-team scraping to focus only on league matches (Paulistão)
             except Exception as e:
                 print(f"Erro descobrindo times em {lg_name}: {e}")
 
@@ -142,6 +135,61 @@ def main():
                         for bm in bookmakers:
                             try:
                                 bm_url = bm.get('url')
+                                # attempt bookmaker-specific direct match page construction for better match hits
+                                direct_markets = None
+                                try:
+                                    from rpa_scraper import parse_match_teams_from_match_page, scrape_betano_odds, scrape_superbet_odds
+
+                                    teams = parse_match_teams_from_match_page(mu) or [
+                                    ]
+
+                                    def _slug(s: str) -> str:
+                                        import unicodedata
+                                        import re
+                                        if not s:
+                                            return ''
+                                        t = unicodedata.normalize('NFKD', s).encode(
+                                            'ascii', 'ignore').decode('ascii')
+                                        t = t.lower()
+                                        t = re.sub(r"[^a-z0-9]+",
+                                                   '-', t).strip('-')
+                                        return t
+
+                                    if teams and len(teams) >= 2:
+                                        home = _slug(teams[0])
+                                        away = _slug(teams[1])
+                                        # Betano pattern: /odds/<home>-<away>/<id>/
+                                        if 'betano' in (bm.get('name') or '').lower() or 'betano' in (bm_url or ''):
+                                            cand = bm_url.rstrip(
+                                                '/') + f"/odds/{home}-{away}/"
+                                            try:
+                                                found = scrape_betano_odds(
+                                                    cand)
+                                                if found and found.get('markets'):
+                                                    direct_markets = found['markets']
+                                            except Exception:
+                                                direct_markets = direct_markets
+                                        # Superbet pattern: /odds/futebol/<home>-x-<away>-<id>/
+                                        if 'superbet' in (bm.get('name') or '').lower() or 'superbet' in (bm_url or ''):
+                                            cand = bm_url.rstrip(
+                                                '/') + f"/odds/futebol/{home}-x-{away}/"
+                                            try:
+                                                found = scrape_superbet_odds(
+                                                    cand)
+                                                if found and found.get('markets'):
+                                                    direct_markets = found['markets']
+                                            except Exception:
+                                                direct_markets = direct_markets
+                                except Exception:
+                                    direct_markets = None
+
+                                if direct_markets:
+                                    for mk in direct_markets:
+                                        mk['bookmaker'] = bm.get('name')
+                                        markets.append(mk)
+                                    continue
+
+                                # fallback: generic find on bookmaker site
                                 found = find_odds_for_match_on_bookmaker(
                                     info, bm_url)
                                 if found and found.get('markets'):

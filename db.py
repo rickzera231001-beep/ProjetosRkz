@@ -33,13 +33,39 @@ def _open_mysql(cfg: Dict[str, Any]):
 
 def _get_conn(db_config) -> Tuple[Any, str]:
     # db_config may be None, a string path, or a dict with type
+    # If no explicit config provided, try environment variables first
     if not db_config:
-        path = os.getenv('DB_PATH', 'bets.db')
-        return _open_sqlite(path)
+        env_type = os.getenv('DB_TYPE')
+        if env_type:
+            # build config from env vars
+            cfg = {
+                'type': env_type,
+                'localhost': os.getenv('DB_HOST'),
+                '5432': os.getenv('DB_PORT'),
+                'postgres': os.getenv('DB_USER'),
+                'Pereira2310!': os.getenv('DB_PASSWORD'),
+                'postgres': os.getenv('DB_NAME') or os.getenv('DB_DATABASE'),
+                'path': os.getenv('DB_PATH')
+            }
+            db_config = cfg
+        else:
+            path = os.getenv('DB_PATH', 'bets.db')
+            return _open_sqlite(path)
     if isinstance(db_config, str):
+        # allow explicit string path to sqlite file
         return _open_sqlite(db_config)
     if isinstance(db_config, dict):
         t = db_config.get('type', 'sqlite').lower()
+        # allow env vars to override individual settings
+        if os.getenv('DB_TYPE'):
+            db_config = {**db_config, **{
+                'host': os.getenv('DB_HOST') or db_config.get('host'),
+                'port': os.getenv('DB_PORT') or db_config.get('port'),
+                'user': os.getenv('DB_USER') or db_config.get('user'),
+                'password': os.getenv('DB_PASSWORD') or db_config.get('password'),
+                'database': os.getenv('DB_NAME') or os.getenv('DB_DATABASE') or db_config.get('database') or db_config.get('db'),
+                'path': os.getenv('DB_PATH') or db_config.get('path')
+            }}
         if t in ('sqlite', 'file'):
             path = db_config.get('path') or os.getenv('DB_PATH', 'bets.db')
             return _open_sqlite(path)
