@@ -233,6 +233,21 @@ def main():
         print({'odd': p['odd'], 'total_delta': p['total_delta'], 'legs': [
               {'odd': l['odd'], 'market': l['market'], 'bookmaker': l.get('bookmaker'), 'match': l.get('match')} for l in p['legs']]})
 
+    # Persist detected candidate legs into configured DB (supports sqlite/postgres/mysql)
+    try:
+        import db
+        db_config = cfg.get('db') or None
+        db.init_db(db_config)
+        # ensure match_url present
+        for c in all_value_legs:
+            if not c.get('match_url'):
+                c['match_url'] = c.get('match')
+        db.save_candidates(all_value_legs, db_config=db_config)
+        target_desc = db_config if db_config else 'bets.db'
+        print(f"Salvos {len(all_value_legs)} candidatos em {target_desc}")
+    except Exception as e:
+        print(f"Falha ao salvar candidatos no DB: {e}")
+
     # Write JSON output if configured
     out_path = cfg.get('output', {}).get('json_file')
     if out_path:
