@@ -257,6 +257,13 @@ def main():
     min_odd = float(cfg.get('value_detection', {}).get('min_odd_for_leg', 1.1))
     max_odd = float(cfg.get('value_detection', {}).get('max_odd_for_leg', 2.0))
 
+    # Debug override: relax filters when DEBUG_RELAX_FILTERS=1
+    if os.environ.get('DEBUG_RELAX_FILTERS') == '1':
+        print('DEBUG_RELAX_FILTERS enabled: relaxing value_margin and odd filters')
+        value_margin = 0.01
+        min_odd = 1.01
+        max_odd = 5.0
+
     all_value_legs = []
     for r in results:
         legs = r.get('legs') or []
