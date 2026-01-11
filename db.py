@@ -44,8 +44,7 @@ def _get_conn(db_config) -> Tuple[Any, str]:
                 '5432': os.getenv('DB_PORT'),
                 'postgres': os.getenv('DB_USER'),
                 'Pereira2310!': os.getenv('DB_PASSWORD'),
-                'postgres': os.getenv('DB_NAME') or os.getenv('DB_DATABASE'),
-                'path': os.getenv('DB_PATH')
+                'postgres': os.getenv('DB_NAME') or os.getenv('DB_DATABASE')
             }
             db_config = cfg
         else:

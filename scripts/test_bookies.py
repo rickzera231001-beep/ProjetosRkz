@@ -1,7 +1,11 @@
 from rpa_scraper import scrape_betano_odds, scrape_superbet_odds
 import json
 import sys
-sys.path.insert(0, '.')
+import os
+proj_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if proj_root not in sys.path:
+    sys.path.insert(0, proj_root)
+
 
 urls = {
     'betano': 'https://www.betano.bet.br/odds/corinthians-ponte-preta/78848213/',
@@ -12,9 +16,9 @@ urls = {
 def pretty_print(name, data):
     markets = data.get('markets') or []
     print(f"--- {name} : {len(markets)} markets ---")
-    for i, m in enumerate(markets[:10]):
+    for i, m in enumerate(markets[:40]):
         print(i+1, {k: v for k, v in m.items()
-              if k in ('market_type', 'selection', 'odd', 'bookmaker')})
+                    if k in ('market_type', 'selection', 'line', 'odd', 'bookmaker', 'context_text')})
 
 
 if __name__ == '__main__':

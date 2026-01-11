@@ -323,64 +323,64 @@ def sanitize_markets(markets: list) -> list:
                 to_remove.add(id(x))
 
     cleaned2 = [m for m in cleaned if id(m) not in to_remove]
-      # attempt to further classify GENERIC markets by inspecting context_text
-      import re
 
-       def _classify(m):
-            if m.get('market_type') and m.get('market_type') != 'GENERIC':
-                return m
-            txt = (m.get('context_text') or m.get('context') or '').lower()
-            if not txt:
-                return m
-            # look for corners/escanteios
-            if 'escante' in txt or 'corner' in txt:
-                # find numeric line (like 3.5 or 3)
-                mo = re.search(r"([0-9]+(?:\.[05])?)", txt)
-                if mo:
-                    line = float(mo.group(1))
-                    # decide over/under by presence of words
-                    if 'over' in txt or 'mais' in txt or '>' in txt:
-                        m['market_type'] = 'CORNERS_OVER'
-                        m['line'] = line
-                    elif 'under' in txt or 'menos' in txt or '<' in txt:
-                        m['market_type'] = 'CORNERS_UNDER'
-                        m['line'] = line
-                    else:
-                        # default to OVER if only a number present
-                        m['market_type'] = 'CORNERS_OVER'
-                        m['line'] = line
-                else:
-                    m['market_type'] = 'CORNERS'
-            # look for goals/total
-            elif 'gol' in txt or 'total' in txt or 'over' in txt or 'under' in txt:
-                mo = re.search(r"([0-9]+(?:\.[05])?)", txt)
-                if mo:
-                    line = float(mo.group(1))
-                    if 'over' in txt or 'mais' in txt or '>' in txt:
-                        m['market_type'] = 'GOALS_OVER'
-                        m['line'] = line
-                    elif 'under' in txt or 'menos' in txt or '<' in txt:
-                        m['market_type'] = 'GOALS_UNDER'
-                        m['line'] = line
-                    else:
-                        m['market_type'] = 'GOALS_OVER'
-                        m['line'] = line
-                else:
-                    m['market_type'] = 'GOALS'
-            # try detect 1X2 patterns like '1 x 2' nearby
-            elif re.search(r"\b1\s*x\s*2\b", txt) or re.search(r"\b1x2\b", txt):
-                # if odds grouped elsewhere, leave selection empty; mark market_type
-                m['market_type'] = '1X2'
+    # attempt to further classify GENERIC markets by inspecting context_text
+    import re
+
+    def _classify(m):
+        if m.get('market_type') and m.get('market_type') != 'GENERIC':
             return m
+        txt = (m.get('context_text') or m.get('context') or '').lower()
+        if not txt:
+            return m
+        # look for corners/escanteios
+        if 'escante' in txt or 'corner' in txt:
+            # find numeric line (like 3.5 or 3)
+            mo = re.search(r"([0-9]+(?:\.[05])?)", txt)
+            if mo:
+                line = float(mo.group(1))
+                # decide over/under by presence of words
+                if 'over' in txt or 'mais' in txt or '>' in txt:
+                    m['market_type'] = 'CORNERS_OVER'
+                    m['line'] = line
+                elif 'under' in txt or 'menos' in txt or '<' in txt:
+                    m['market_type'] = 'CORNERS_UNDER'
+                    m['line'] = line
+                else:
+                    # default to OVER if only a number present
+                    m['market_type'] = 'CORNERS_OVER'
+                    m['line'] = line
+            else:
+                m['market_type'] = 'CORNERS'
+        # look for goals/total
+        elif 'gol' in txt or 'total' in txt or 'over' in txt or 'under' in txt:
+            mo = re.search(r"([0-9]+(?:\.[05])?)", txt)
+            if mo:
+                line = float(mo.group(1))
+                if 'over' in txt or 'mais' in txt or '>' in txt:
+                    m['market_type'] = 'GOALS_OVER'
+                    m['line'] = line
+                elif 'under' in txt or 'menos' in txt or '<' in txt:
+                    m['market_type'] = 'GOALS_UNDER'
+                    m['line'] = line
+                else:
+                    m['market_type'] = 'GOALS_OVER'
+                    m['line'] = line
+            else:
+                m['market_type'] = 'GOALS'
+        # try detect 1X2 patterns like '1 x 2' nearby
+        elif re.search(r"\b1\s*x\s*2\b", txt) or re.search(r"\b1x2\b", txt):
+            # if odds grouped elsewhere, leave selection empty; mark market_type
+            m['market_type'] = '1X2'
+        return m
 
-        cleaned3 = []
-        for m in cleaned2:
-            try:
-                cleaned3.append(_classify(m))
-            except Exception:
-                cleaned3.append(m)
-        return cleaned3
-    return cleaned2
+    cleaned3 = []
+    for m in cleaned2:
+        try:
+            cleaned3.append(_classify(m))
+        except Exception:
+            cleaned3.append(m)
+    return cleaned3
 
 
 def scrape_betano_odds(url: str) -> Dict[str, Any]:

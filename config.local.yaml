@@ -24,6 +24,18 @@ leagues:
     source: "sofascore"
     url: "https://www.sofascore.com/pt/torneio/futebol/brazil/paulista-serie-a1/372#id:86993,tab:matches"
     max_teams: 20
+  - name: "Bundesliga"
+    source: "sofascore"
+    url: "https://www.sofascore.com/pt/torneio/futebol/germany/bundesliga/35#id:77333"
+    max_teams: 20
+  - name: "Serie A"
+    source: "sofascore"
+    url: "https://www.sofascore.com/pt/torneio/futebol/italy/serie-a/23#id:76457"
+    max_teams: 20
+  - name: "LaLiga"
+    source: "sofascore"
+    url: "https://www.sofascore.com/pt/torneio/futebol/spain/laliga/8#id:77559"
+    max_teams: 20
 
 # Filtro de partidas: por padrão, hoje + 1 dia (amanhã)
 match_filter:
