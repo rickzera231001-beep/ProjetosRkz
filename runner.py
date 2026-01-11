@@ -199,11 +199,39 @@ def main():
                             except Exception as e:
                                 print(
                                     f"Erro coletando odds em {bm.get('name')}: {e}")
-                        if markets:
-                            info['markets'] = markets
+                                # if markets empty or mostly GENERIC, attempt Playwright DOM extraction per-bookmaker
+                                try:
+                                    from rpa_playwright import extract_markets_near_labels
+                                    need_pw = False
+                                    if not markets:
+                                        need_pw = True
+                                    else:
+                                        gen = sum(1 for mm in markets if (
+                                            mm.get('market_type') or '').upper() == 'GENERIC')
+                                        if gen >= max(1, len(markets) // 2):
+                                            need_pw = True
+                                    if need_pw:
+                                        for bm in bookmakers:
+                                            try:
+                                                labels = [
+                                                    'escanteios', 'corners', 'over', 'under', 'mais de', 'menos de', 'o/u', 'total', '1', 'x', '2']
+                                                pw = extract_markets_near_labels(
+                                                    mu, labels)
+                                                for entry in pw:
+                                                    for od in entry.get('odds', []):
+                                                        mk = {'market_type': 'GENERIC', 'selection': None, 'odd': od.get('value'), 'context': od.get(
+                                                            'html'), 'bookmaker': bm.get('name'), 'context_text': entry.get('label')}
+                                                        markets.append(mk)
+                                            except Exception:
+                                                continue
+                                except Exception:
+                                    pass
 
-                        collected.append(info)
-                        kept += 1
+                                if markets:
+                                    info['markets'] = markets
+
+                                collected.append(info)
+                                kept += 1
                     except Exception as e:
                         print(f"Erro ao processar partida {mu}: {e}")
                 print(f"Mantidas {kept} partidas filtradas por data.")
@@ -214,8 +242,10 @@ def main():
     api_key = cfg.get("openai", {}).get(
         "api_key") or os.getenv("OPENAI_API_KEY")
 
+    # allow stats DB path to be passed via config `stats_db_path` or env `STATS_DB_PATH`
+    stats_db_path = cfg.get('stats_db_path') or os.environ.get('STATS_DB_PATH')
     results = evaluate_matches(
-        collected, use_openai=use_openai, openai_api_key=api_key)
+        collected, use_openai=use_openai, openai_api_key=api_key, stats_db_path=stats_db_path)
 
     print("\n--- Recomendações / Scores ---\n")
     for r in results:

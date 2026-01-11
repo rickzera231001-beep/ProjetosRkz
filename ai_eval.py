@@ -289,22 +289,31 @@ def _detect_market_from_context(mkt: Dict[str, Any]) -> Dict[str, Any]:
         txt += ' ' + str(mkt.get('context'))
     t = txt.lower()
 
-    # Over/under numeric lines
-    ou = re.search(r"(over|under|mais de|menos de)\s*([0-9]+(?:\.[05])?)", t)
+    # Over/under numeric lines (support comma decimals)
+    ou = re.search(
+        r"(over|under|mais de|menos de|o/u|total)\s*([0-9]+(?:[\.,][05])?)", t)
     if ou:
         side = ou.group(1)
-        line = float(ou.group(2))
+        line_raw = ou.group(2).replace(',', '.')
+        try:
+            line = float(line_raw)
+        except Exception:
+            line = None
         if 'corn' in t or 'escante' in t:
             mtype = 'CORNERS_OVER' if 'over' in side or 'mais' in side else 'CORNERS_UNDER'
             return {'type': mtype, 'line': line}
         else:
-            mtype = 'GOALS_OVER' if 'over' in side or 'mais' in side else 'GOALS_UNDER'
+            mtype = 'GOALS_OVER' if 'over' in side or 'mais' in side or 'o/u' in side or 'total' in side else 'GOALS_UNDER'
             return {'type': mtype, 'line': line}
 
     # patterns like 'o/u 2.5' or 'over 2.5' elsewhere
-    ou2 = re.search(r"([0-9]+(?:\.[05])?)", t)
-    if ou2 and ('over' in t or 'under' in t or 'o/u' in t or 'total' in t):
-        line = float(ou2.group(1))
+    # fallback: any numeric token near OU keywords
+    ou2 = re.search(r"([0-9]+(?:[\.,][05])?)", t)
+    if ou2 and ('over' in t or 'under' in t or 'o/u' in t or 'total' in t or 'mais' in t or 'menos' in t):
+        try:
+            line = float(ou2.group(1).replace(',', '.'))
+        except Exception:
+            line = None
         if 'corn' in t or 'escante' in t:
             if 'under' in t or 'menos' in t:
                 return {'type': 'CORNERS_UNDER', 'line': line}
@@ -314,8 +323,17 @@ def _detect_market_from_context(mkt: Dict[str, Any]) -> Dict[str, Any]:
                 return {'type': 'GOALS_UNDER', 'line': line}
             return {'type': 'GOALS_OVER', 'line': line}
 
-    # 1X2 detection
-    if '1x2' in t or ('1' in t and 'x' in t and '2' in t) or mkt.get('market_type') == '1X2':
+    # 1X2 detection and selection mapping
+    if '1x2' in t or ('1' in t and 'x' in t and '2' in t) or mkt.get('market_type') == '1X2' or any(k in t for k in ['home', 'away', 'draw', 'empate', 'casa', 'visitante']):
+        # try to detect specific selection
+        sel = mkt.get('selection') or ''
+        s = str(sel).lower()
+        if 'casa' in s or 'home' in s or s.strip() == '1':
+            return {'type': '1X2', 'line': None, 'selection': '1'}
+        if 'visitante' in s or 'away' in s or s.strip() == '2':
+            return {'type': '1X2', 'line': None, 'selection': '2'}
+        if 'empate' in s or 'draw' in s or 'x' == s.strip().lower():
+            return {'type': '1X2', 'line': None, 'selection': 'X'}
         return {'type': '1X2', 'line': None}
 
     return None
@@ -439,7 +457,7 @@ def evaluate_markets_for_match(match: Dict[str, Any], team_stats_map: Dict[str, 
     return legs
 
 
-def evaluate_matches(items: List[Dict[str, Any]], use_openai: bool = False, openai_api_key: str = None) -> List[Dict[str, Any]]:
+def evaluate_matches(items: List[Dict[str, Any]], use_openai: bool = False, openai_api_key: str = None, stats_db_path: str = None) -> List[Dict[str, Any]]:
     """Evaluate a list of scraped match/team items and return scored recommendations.
 
     If OpenAI key provided and `use_openai` True, will attempt a generative evaluation; otherwise uses a simple heuristic.
@@ -452,6 +470,40 @@ def evaluate_matches(items: List[Dict[str, Any]], use_openai: bool = False, open
         if it.get('team_name') and (it.get('source_name') and 'team' in it.get('source_name').lower()):
             name = _norm_name(it.get('team_name'))
             team_map[name] = summarize_numeric_stats(it)
+
+    # If a stats DB path provided, try to augment map from stored stats
+    if stats_db_path:
+        try:
+            import stats_db
+            import json as _json
+            # collect candidate team names from items
+            cand_names = set()
+            for it in items:
+                for k in ('team_name', 'home', 'away', 'home_name', 'away_name'):
+                    if it.get(k):
+                        cand_names.add(_norm_name(str(it.get(k))))
+            for name in cand_names:
+                if name in team_map:
+                    continue
+                try:
+                    rec = stats_db.get_team_stats(name, db_path=stats_db_path)
+                    if rec:
+                        # prefer raw json if present
+                        raw = rec.get('raw') if isinstance(rec, dict) else None
+                        sdict = None
+                        if raw:
+                            try:
+                                sdict = _json.loads(raw)
+                            except Exception:
+                                sdict = rec
+                        else:
+                            sdict = rec
+                        team_map[name] = summarize_numeric_stats(sdict)
+                except Exception:
+                    continue
+        except Exception:
+            # ignore DB failures and proceed with in-memory stats
+            pass
 
     # For match items with markets, evaluate markets using team stats
     for it in items:
