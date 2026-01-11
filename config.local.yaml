@@ -1,0 +1,51 @@
+# Config local para o RPA: edite seletores / templates conforme necessário.
+
+sites:
+  - name: Betano_Market
+    type: "bookmaker"
+    url: "https://www.betano.bet.br/"
+    # seletores CSS de exemplo — ajustar conforme página de mercado específica
+    odds_selectors:
+      market_name: ".market__header"
+      market_odds: ".odds__value"
+  - name: "R10Score_Stats"
+    type: "r10score"
+    url: "https://www.r10score.com/"
+  - name: Superbet_Market
+    type: "bookmaker"
+    url: "https://superbet.bet.br/"
+    odds_selectors:
+      market_name: ".market-title"
+      market_odds: ".odd-value"
+
+# Ligas para analisar (adapte URLs para páginas de torneio/temporada do SofaScore)
+leagues:
+  - name: "Paulistão"
+    source: "sofascore"
+    url: "https://www.sofascore.com/pt/torneio/futebol/brazil/paulista-serie-a1/372#id:86993,tab:matches"
+    max_teams: 20
+
+# Filtro de partidas: por padrão, hoje + 1 dia (amanhã)
+match_filter:
+  type: "upcoming"
+  days_ahead: 1
+
+# Parâmetros de detecção de valor e geração de parlays
+value_detection:
+  value_margin: 0.05      # prob_est - implied_prob >= value_margin
+  parlay_target: 2.0      # odd alvo para parlays
+  max_parlay_legs: 3
+  min_odd_for_leg: 1.10
+  max_odd_for_leg: 2.00
+  allow_cross_game: true
+
+# OpenAI / IA
+openai:
+  use_openai: false
+  api_key: "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"  # ou use var de ambiente OPENAI_API_KEY
+  model: "gpt-4o-mini"
+
+# Saída: console e opcionalmente arquivo JSON
+output:
+  json_file: "recommendations.json"
+  verbose: true

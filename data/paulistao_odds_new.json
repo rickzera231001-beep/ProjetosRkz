@@ -1,0 +1,609 @@
+{
+  "generated_at": "2026-01-11T04:10:30.973516",
+  "matches": [
+    {
+      "url": "https://www.sofascore.com/pt/football/match/ponte-preta-corinthians/hOsuO#id:15176506",
+      "home": "Ponte Preta",
+      "away": "Corinthians",
+      "markets": [
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-ponte-preta/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "08&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-ponte-preta/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-ponte-preta/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-corinthians/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "b4&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-corinthians/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-corinthians/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sofascore.com/pt/football/match/ae-velo-clube-botafogo-sp/EOsLzK#id:15176518",
+      "home": "Comparar equipes",
+      "away": "Velo Clube",
+      "markets": [
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "f3&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-velo-clube/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "02&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-velo-clube/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-velo-clube/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sofascore.com/pt/football/match/ec-noroeste-red-bull-bragantino/ZOsmOc#id:15176508",
+      "home": "Comparar equipes",
+      "away": "Noroeste",
+      "markets": [
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "fe&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-noroeste/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "2a&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-noroeste/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-noroeste/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.sofascore.com/pt/football/match/mirassol-sao-paulo/GOsHOi#id:15176504",
+      "home": "Comparar equipes",
+      "away": "Mirassol",
+      "markets": [
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "8f&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-comparar-equipes/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 8.0,
+          "context": "lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"w",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-mirassol/"
+        },
+        {
+          "market_type": "GENERIC",
+          "selection": null,
+          "odd": 9.1,
+          "context": "3a&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quo",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://www.betano.bet.br/odds/comparar-equipes-mirassol/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "1",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "X",
+          "odd": 20.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "1X2",
+          "selection": "2",
+          "odd": 0.0,
+          "context": "ear:both;float:left;font-size:.82em;line-height:1.5;padding:10px 20px 20px 20px;margin:0}#onetrust-banner-sdk #onetrust-policy-text>",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 26.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "row{margin:0;max-width:none;display:block}#onetrust-banner-sdk.otFloatingRoundedCorner{position:fixed;z-index:2147483645;background-color:#fff;width:26%;max-width:375px;border-radius:2.5px;bottom:1em;left:1em;font-size:16px;max-height:90%;overflow-x:hidden;overflow-y:auto;box-shadow:0 ",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 2.0,
+          "context": "y:auto;box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFloatingRoundedCorner.otRelFont{font-size:1rem}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar{width:11px}#onetrust-banner-sdk.otFloatingRoundedCorner::-webkit-scrollbar-thumb{border-radius:10px;background",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        },
+        {
+          "market_type": "CORNERS",
+          "selection": null,
+          "odd": 48.0,
+          "context": "k #onetrust-close-btn-container{right:3px}#onetrust-banner-sdk.otFloatingRoundedCorner{width:48%}}\n        #onetrust-consent-sdk #onetrust-banner-sdk {background-color: #FFFFFF;}\n            #onetrust-consent-sdk #onetrust-policy-title,\n                    #onetrust-consent-sdk #onetru",
+          "bookmaker": "Betano_Market",
+          "source_url": "https://superbet.bet.br/odds/futebol/comparar-equipes-x-mirassol/"
+        }
+      ]
+    }
+  ]
+}
